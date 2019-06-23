@@ -15,13 +15,9 @@
     },
     "arguments": {
         "execute": {
-           "inArguments":[
-				{
-                    "longURL": "{{Contact.Attribute.CustomActivity.longURL}}"
-                }									
-			],
+           "inArguments":[],
           "outArguments": [],
-          "url": "https://<your-domain-here>/journeybuilder/execute",
+          "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
