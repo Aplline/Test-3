@@ -20,7 +20,8 @@
             require(config, dependencies);
         })();
     </script>
-    
+
+    <!--Styles-->
     <style type="text/css">
         body {
             padding: 20px;
@@ -35,34 +36,15 @@
     </style>
 
 </head>
-    
 <body>
+<div id="step1" class="step">
 
-<div id="URLsource" class="step">    
-
-</div>
-    
-        <div id="step1" class="step">
-        <div class="slds-grid">
-
-            <main class="slds-col">
-                
-                <h1>Entrer l'URL</h1>
-                
-                    <label for="longURL">URL à raccourcir</label>
-                    <input type="text" id="longURL" name="longURL" required
-                     minlength="4" maxlength="1000" size="100
-       
+    Entrer l'URL
+        <option value="">Entrer l'URL</option>
     </select>
-                
-            </main>
-            
-            <button id="finish">Terminé</button>
 
-        </div>
-
-    </div>
+    <button id="toggleLastStep">Terminé</button>
+</div>
 
 </body>
-    
 </html>
