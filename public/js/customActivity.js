@@ -62,7 +62,6 @@ define([
     }
 
     function onGetEndpoints(endpoints) {
-        Response: endpoints = { restHost: <"rest.s1.qa1.exacttarget.com"> };
         console.log(endpoints);
     }
 
@@ -70,7 +69,7 @@ define([
         var longURLValue = $('#longURL').val();
 
         payload['arguments'].execute.inArguments = [{
-            "tokens": authTokens,
+            "tokens": authTokens
         }];
         
         payload['metaData'].isConfigured = true;
