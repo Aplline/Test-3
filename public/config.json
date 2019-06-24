@@ -27,7 +27,7 @@
         }
     },
     "configurationArguments": {
-      "applicationExtensionKey": "c754dccd-10ac-45fb-9726-eaefe735cc17",
+      "applicationExtensionKey": "3e50959f-aae6-4340-8311-afdd19666554",
       "save": {
         "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/save",
           "verb": "POST",
