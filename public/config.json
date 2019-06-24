@@ -63,10 +63,7 @@
         "arguments": {
             "execute": {
                 "inArguments": [],
-                "outArguments": ["shortURL": {
-                            "dataType": "Texte",
-                            "direction": "out",
-                            "access": "visible"}]
+                "outArguments": []
             }
         }
     }
