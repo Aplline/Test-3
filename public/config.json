@@ -17,7 +17,7 @@
         "execute": {
            "inArguments":[],
           "outArguments": ["shortURL": ""],
-          "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/execute",
+          "url": "https://testshortener.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
             "header": "",
@@ -29,22 +29,22 @@
     "configurationArguments": {
       "applicationExtensionKey": "c754dccd-10ac-45fb-9726-eaefe735cc17",
       "save": {
-        "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/save",
+        "url": "https://testshortener.herokuapp.com/journeybuilder/save",
           "verb": "POST",
         "useJwt": true
        },
        "publish": {
-        "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/publish",
+        "url": "https://testshortener.herokuapp.com/journeybuilder/publish",
            "verb": "POST",
         "useJwt": true
        },
       "stop": {
-        "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/stop",
+        "url": "https://testshortener.herokuapp.com/journeybuilder/stop",
            "verb": "POST",
         "useJwt": true
       },
       "validate": {
-        "url": "https:/testsalesforceurl.herokuapp.com/journeybuilder/validate",
+        "url": "https://testshortener.herokuapp.com/journeybuilder/validate",
         "verb": "POST",
         "useJwt": true
       }
