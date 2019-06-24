@@ -62,7 +62,7 @@ define([
     }
 
     function onGetEndpoints(endpoints) {
-        Response: endpoints = { restHost: <"https://testsalesforceurl.herokuapp.com/"> }
+        Response: endpoints = { restHost: <"rest.s1.qa1.exacttarget.com"> }
         console.log(endpoints);
     }
 
