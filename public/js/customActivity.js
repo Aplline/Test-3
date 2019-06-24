@@ -62,6 +62,7 @@ define([
     }
 
     function onGetEndpoints(endpoints) {
+        Response: endpoints = { restHost: <https://mc.s50.exacttarget.com/> }
         console.log(endpoints);
     }
 
