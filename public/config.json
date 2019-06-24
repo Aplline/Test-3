@@ -16,7 +16,7 @@
     "arguments": {
         "execute": {
            "inArguments":[],
-          "outArguments": ["shortURL": ""],
+          "outArguments": [{"shortURL": ""}],
           "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
