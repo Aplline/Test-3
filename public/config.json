@@ -7,7 +7,7 @@
     },
     "type": "REST",
     "lang": {
-        "en-US": {
+        "fr-FR": {
             "name": "Raccourcir l'URL",
           "description": "Raccourcir l'URL",
           "step1Label": "Entrer l'URL"
