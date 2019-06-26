@@ -70,7 +70,8 @@ define([
         var longURLValue = $('#longURL').val();
 
         payload['arguments'].execute.inArguments = [{
-            "tokens": authTokens
+            "tokens": authTokens,
+            "long_url": longURLValue
         }];
         
         payload['metaData'].isConfigured = true;
