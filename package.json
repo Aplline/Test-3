@@ -1,7 +1,7 @@
 {
-  "name": "jb-activity-template",
+  "name": "Test-3",
   "version": "1.0.0",
-  "description": "Journey Builder Activity Template",
+  "description": "Test url shortener",
   "engines": {
     "node": "6.11.1"
   },
