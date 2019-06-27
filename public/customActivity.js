@@ -9,6 +9,9 @@ define([
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
+    var steps = [{ "label": "Entrer l'URL", "key": "step1" }];
+    var currentStep= steps[0].key;
+    
     $(window).ready(onRender);
 
     connection.on('initActivity', initialize);
@@ -46,7 +49,8 @@ define([
         $.each(inArguments, function (index, inArgument) {
             $.each(inArgument, function (key, val) {
                 
-              
+              if (key == 'long_URL') { $('#longURL').val(val) }
+                
             });
         });
 
@@ -67,6 +71,7 @@ define([
     }
 
     function save() {
+        
         var longURLValue = $('#longURL').val();
 
         payload['arguments'].execute.inArguments = [{
