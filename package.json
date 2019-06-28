@@ -1,6 +1,6 @@
 {
   "name": "Test-3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test url shortener",
   "engines": {
     "node": "6.11.1"
