@@ -88,13 +88,16 @@ exports.execute = function (req, res) {
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
           
-            Http http = new Http();
-            HttpRequest request = new HttpRequest();
-            request.setEndpoint('https://www.googleapis.com/urlshortener/v1/url');
-            request.setMethod('POST');
-            request.setHeader('Content-Type','application/json');
-            request.setBody({"longUrl": "https://test.com");
-            HttpResponse response = http.send(request)
+           // Http http = new Http();
+           // HttpRequest request = new HttpRequest();
+           // request.setEndpoint('https://www.googleapis.com/urlshortener/v1/url');
+           // request.setMethod('POST');
+            // request.setHeader('Content-Type','application/json');
+            // request.setBody({"longUrl": "https://test.com");
+            //HttpResponse response = http.send(request)
+            
+            logData(req);
+            res.send(200, 'Execute');
 };
 
 
