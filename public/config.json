@@ -65,8 +65,8 @@
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [{"Name":{"dataType":"String", "isNullable":false, "direction":"in"}}],
-                "outArguments": [{"out":{"dataType":"String", "direction":"out","access":"visible"}}]
+                //"inArguments": [{"Name":{"dataType":"String", "isNullable":false, "direction":"in"}}],
+                //"outArguments": [{"out":{"dataType":"String", "direction":"out","access":"visible"}}]
             }
         }
     }
