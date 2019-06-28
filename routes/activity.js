@@ -46,7 +46,7 @@ function logData(req) {
     console.log("protocol: " + req.protocol);
     console.log("secure: " + req.secure);
     console.log("originalUrl: " + req.originalUrl);
-}
+};
 
 /*
  * POST Handler for / route of Activity (this is the edit route).
