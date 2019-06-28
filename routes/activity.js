@@ -98,7 +98,7 @@ exports.execute = function (req, res) {
             
             logData(req);
             var dict = {};
-            var dict["out"] = decodedArgs["Name"];
+            dict["out"] = decodedArgs["Name"];
             res.body = dict;
         }}
         res.send(200, 'Execute');
