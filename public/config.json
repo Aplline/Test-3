@@ -15,8 +15,11 @@
     },
     "arguments": {
         "execute": {
-          "inArguments":[],
-          "outArguments": [],
+          "inArguments":[{
+                    "Name": "{{Lead.Name}}"
+                }],
+          "outArguments": [{ "out":""
+                }],
           "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
@@ -62,8 +65,8 @@
     "schema": {
         "arguments": {
             "execute": {
-                "inArguments": [],
-                "outArguments": []
+                "inArguments": [{"Name":{"dataType":"String", "isNullable":false, "direction":"in"}}],
+                "outArguments": [{"out":{"dataType":"String", "direction":"out","access":"visible"}}]
             }
         }
     }
