@@ -64,6 +64,7 @@ exports.edit = function (req, res) {
 exports.save = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
+    
     logData(req);
     res.send(200, 'Save');
 };
@@ -87,8 +88,11 @@ exports.execute = function (req, res) {
             // decoded in arguments
             var decodedArgs = decoded.inArguments[0];
             
-            logData(req);
-            res.send(200, 'Execute');
+            Bitly.create({
+                long_URL:decodedArgs.longURL},
+                        function(err, res){console.log(err, res);
+                 });
+                
         } else {
             console.error('inArguments invalid.');
             return res.status(400).end();
@@ -113,6 +117,7 @@ exports.publish = function (req, res) {
 exports.validate = function (req, res) {
     // Data from the req and put it in an array accessible to the main app.
     //console.log( req.body );
+    
     logData(req);
     res.send(200, 'Validate');
 };
