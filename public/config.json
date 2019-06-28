@@ -8,15 +8,15 @@
     "type": "REST",
     "lang": {
         "fr-FR": {
-            "name": "Raccourcir l'URL",
+          "name": "Raccourcir l'URL",
           "description": "Raccourcir l'URL",
           "step1Label": "Entrer l'URL"
         }
     },
     "arguments": {
         "execute": {
-          "inArguments":[],
-          "outArguments": [],
+          "inArguments":[{"Name":"Bonjour"}],
+          "outArguments": [{"out":""}],
           "url": "https://testsalesforceurl.herokuapp.com/journeybuilder/execute",
            "verb": "POST",
             "body": "",
@@ -62,6 +62,8 @@
     "schema": {
         "arguments": {
             "execute": {
+                "inArguments":[{"Name":{"dataType":"String", "direction":"in", "isNullable":false}}],
+                "outArguments":[{"out":{"dataType":"String", "direction":"out","access":"visible"}}]
             }
         }
     }
