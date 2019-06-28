@@ -16,7 +16,7 @@
     "arguments": {
         "execute": {
           "inArguments":[{
-                    "Name": "{{Lead.Name}}"
+                    "Name": "Bonjour"
                 }],
           "outArguments": [{ "out":""
                 }],
