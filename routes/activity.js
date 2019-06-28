@@ -46,7 +46,7 @@ function logData(req) {
     console.log("protocol: " + req.protocol);
     console.log("secure: " + req.secure);
     console.log("originalUrl: " + req.originalUrl);
-};
+}
 
 /*
  * POST Handler for / route of Activity (this is the edit route).
@@ -86,10 +86,22 @@ exports.execute = function (req, res) {
         if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
             
             // decoded in arguments
-            var decodedArgs = decoded.inArguments[0]
+            var decodedArgs = decoded.inArguments[0];
+          
+           // Http http = new Http();
+           // HttpRequest request = new HttpRequest();
+           // request.setEndpoint('https://www.googleapis.com/urlshortener/v1/url');
+           // request.setMethod('POST');
+            // request.setHeader('Content-Type','application/json');
+            // request.setBody({"longUrl": "https://test.com");
+            //HttpResponse response = http.send(request)
             
             logData(req);
-            res.send(200, 'Execute');
+            var dict = {};
+            var dict["out"] = decodedArgs["Name"];
+            res.body = dict;
+        }}
+        res.send(200, 'Execute');
 };
 
 
